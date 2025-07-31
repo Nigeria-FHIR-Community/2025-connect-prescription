@@ -1,0 +1,212 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "example-coverage-enquiry-bundle",
+  "meta" : {
+    "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-coverage-enquiry-bundle"]
+  },
+  "type" : "collection",
+  "timestamp" : "2025-08-06T13:00:00+01:00",
+  "entry" : [{
+    "fullUrl" : "urn:uuid:eligibility-request-001",
+    "resource" : {
+      "resourceType" : "CoverageEligibilityRequest",
+      "id" : "eligibility-request-001",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-eligibility-request"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"CoverageEligibilityRequest_eligibility-request-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: CoverageEligibilityRequest eligibility-request-001</b></p><a name=\"eligibility-request-001\"> </a><a name=\"hceligibility-request-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-eligibility-request.html\">NG-CoverageEligibilityRequest</a></p></div><p><b>status</b>: Active</p><p><b>purpose</b>: test</p><p><b>patient</b>: <a href=\"Bundle-example-coverage-enquiry-bundle.html#urn-uuid-patient-001\">Bundle: type = collection; timestamp = 2025-08-06 13:00:00+0100</a></p><p><b>created</b>: 2025-08-06</p><p><b>provider</b>: <a href=\"Bundle-example-coverage-enquiry-bundle.html#urn-uuid-practitioner-001\">Bundle: type = collection; timestamp = 2025-08-06 13:00:00+0100</a></p><p><b>insurer</b>: <a href=\"Bundle-example-coverage-enquiry-bundle.html#urn-uuid-organization-001\">Bundle: type = collection; timestamp = 2025-08-06 13:00:00+0100</a></p><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td><td><a href=\"Bundle-example-coverage-enquiry-bundle.html#urn-uuid-coverage-001\">Bundle: type = collection; timestamp = 2025-08-06 13:00:00+0100</a></td></tr></table></div>"
+      },
+      "status" : "active",
+      "purpose" : ["test"],
+      "patient" : {
+        "reference" : "urn:uuid:patient-001"
+      },
+      "created" : "2025-08-06",
+      "provider" : {
+        "reference" : "urn:uuid:practitioner-001"
+      },
+      "insurer" : {
+        "reference" : "urn:uuid:organization-001"
+      },
+      "insurance" : [{
+        "focal" : true,
+        "coverage" : {
+          "reference" : "urn:uuid:coverage-001"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:patient-001",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "patient-001",
+      "meta" : {
+        "lastUpdated" : "2025-07-30T10:20:00+01:00",
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPatient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_patient-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-001</b></p><a name=\"patient-001\"> </a><a name=\"hcpatient-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2025-07-30 10:20:00+0100</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgPatient.html\">NG Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Chinedu Okoro  Male, DoB: 1990-06-15 ( https://nimc.gov.ng#NIN123456789)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">23 Market Road Nsukka Enugu </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Language spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes:{urn:ietf:bcp:47 ig}\">Igbo</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient contact\">Contact:</td><td colspan=\"3\"><ul><li>Ngozi Okoro </li><li>23 Market Road Nsukka Enugu </li><li><a href=\"tel:+2348123456789\">+2348123456789</a></li></ul></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://nimc.gov.ng",
+        "value" : "NIN123456789"
+      }],
+      "active" : true,
+      "name" : [{
+        "family" : "Okoro",
+        "given" : ["Chinedu"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1990-06-15",
+      "address" : [{
+        "line" : ["23 Market Road"],
+        "city" : "Nsukka",
+        "district" : "nsukka",
+        "state" : "Enugu"
+      }],
+      "photo" : [{
+        "contentType" : "image/jpeg",
+        "url" : "https://example.org/patient-photos/chinedu-okoro.jpg",
+        "size" : 245600,
+        "title" : "Chinedu Okoro profile photo"
+      }],
+      "contact" : [{
+        "name" : {
+          "family" : "Okoro",
+          "given" : ["Ngozi"]
+        },
+        "telecom" : [{
+          "system" : "phone",
+          "value" : "+2348123456789"
+        }],
+        "address" : {
+          "line" : ["23 Market Road"],
+          "city" : "Nsukka",
+          "district" : "nsukka",
+          "state" : "Enugu"
+        }
+      }],
+      "communication" : [{
+        "language" : {
+          "coding" : [{
+            "system" : "urn:ietf:bcp:47",
+            "code" : "ig",
+            "display" : "Igbo"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:coverage-001",
+    "resource" : {
+      "resourceType" : "Coverage",
+      "id" : "coverage-001",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-claim-coverage"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Coverage_coverage-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Coverage coverage-001</b></p><a name=\"coverage-001\"> </a><a name=\"hccoverage-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-claim-coverage.html\">NG-Claim Coverage</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/coverage-type EHCPOL}\">EHCPOL</span></p><p><b>beneficiary</b>: <a href=\"Bundle-example-coverage-enquiry-bundle.html#urn-uuid-patient-001\">Bundle: type = collection; timestamp = 2025-08-06 13:00:00+0100</a></p><p><b>period</b>: 2025-01-01 --&gt; 2025-12-31</p><p><b>payor</b>: <a href=\"Bundle-example-coverage-enquiry-bundle.html#urn-uuid-organization-001\">Bundle: type = collection; timestamp = 2025-08-06 13:00:00+0100</a></p></div>"
+      },
+      "status" : "active",
+      "type" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/coverage-type",
+          "code" : "EHCPOL"
+        }]
+      },
+      "beneficiary" : {
+        "reference" : "urn:uuid:patient-001"
+      },
+      "period" : {
+        "start" : "2025-01-01",
+        "end" : "2025-12-31"
+      },
+      "payor" : [{
+        "reference" : "urn:uuid:organization-001"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:organization-001",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "organization-001",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/ng-imm-organization"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_organization-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization organization-001</b></p><a name=\"organization-001\"> </a><a name=\"hcorganization-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ng-imm-organization.html\">NG Organization</a></p></div><p><b>identifier</b>: <code>https://herfama.lagos.ng</code>/HF-0001</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Healthcare Provider</span></p><p><b>name</b>: Sunlight Medical Center</p><p><b>telecom</b>: <a href=\"tel:+2348012345678\">+2348012345678</a></p><p><b>address</b>: 12 Ikoyi Crescent Lagos Lagos </p></div>"
+      },
+      "identifier" : [{
+        "system" : "https://herfama.lagos.ng",
+        "value" : "HF-0001"
+      }],
+      "active" : true,
+      "type" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }]
+      }],
+      "name" : "Sunlight Medical Center",
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "+2348012345678"
+      }],
+      "address" : [{
+        "line" : ["12 Ikoyi Crescent"],
+        "city" : "Lagos",
+        "district" : "ikeja",
+        "state" : "Lagos"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "urn:uuid:practitioner-001",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "practitioner-001",
+      "meta" : {
+        "profile" : ["https://dhin.org/2025Connectathon/StructureDefinition/NgPractitioner"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_practitioner-001\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-001</b></p><a name=\"practitioner-001\"> </a><a name=\"hcpractitioner-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NgPractitioner.html\">NG Practitioner</a></p></div><p><b>identifier</b>: <code>https://mdcn.gov.ng</code>/MDCN-457812</p><p><b>active</b>: true</p><p><b>name</b>: Chinelo Okoye </p><p><b>telecom</b>: ph: 08011223344</p><p><b>birthDate</b>: 1982-03-10</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:\">MEDCERT-2023</span></td><td>2023-01-01 --&gt; 2028-12-31</td><td><a href=\"Organization-organization-001.html\">Organization Sunlight Medical Center</a></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "https://mdcn.gov.ng",
+        "value" : "MDCN-457812"
+      }],
+      "active" : true,
+      "name" : [{
+        "family" : "Okoye",
+        "given" : ["Chinelo"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "08011223344"
+      }],
+      "birthDate" : "1982-03-10",
+      "qualification" : [{
+        "code" : {
+          "text" : "MEDCERT-2023"
+        },
+        "period" : {
+          "start" : "2023-01-01",
+          "end" : "2028-12-31"
+        },
+        "issuer" : {
+          "reference" : "Organization/organization-001"
+        }
+      }]
+    }
+  }]
+}

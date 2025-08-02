@@ -4,7 +4,7 @@ DHIN2025connectathonePrescription : Validation Results
 err = 179, warn = 79, info = 63
 $--
 Generated $--. FHIR version $-- for 2025connectathonPrescription#$-- (canonical = https://dhin.org/2025Connectathon)
- Build Errors : 26 / 4 / 0
+ Build Errors : 22 / 4 / 0
  /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/PRESCRIPTION/2025-connect-prescription/fsh-generated/resources/AuditEvent-audit-001 : 4 / 1 / 1
  /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/PRESCRIPTION/2025-connect-prescription/fsh-generated/resources/Bundle-example-coverage-enquiry-bundle : 29 / 4 / 23
  /Users/emekachukwu/Desktop/FutureFitProjects/2025_CONNECTATHON/PRESCRIPTION/2025-connect-prescription/fsh-generated/resources/Bundle-example-dispense-notification : 52 / 9 / 39
@@ -65,30 +65,26 @@ Generated $--. FHIR version $-- for 2025connectathonPrescription#$-- (canonical 
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[23].value: Supressed messages file not found
 ERROR: package.tgz: Error converting pacakge to R4B: Error processing example/Bundle-example-coverage-enquiry-bundle.json: Unknown EligibilityRequestPurpose code 'test'
-ERROR: AuditEvent-audit-001.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1280: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
-ERROR: AuditEvent-audit-001.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1521: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
-ERROR: Bundle-example-dispense-notification.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 1527: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
-ERROR: Bundle-example-dispense-notification.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 168, column 9318: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
-ERROR: Bundle-example-dispense-notification.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 10102: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
-ERROR: Bundle-example-dispense-notification.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 11422: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
-ERROR: Bundle-example-dispense-notification.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 11643: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
-ERROR: Bundle-example-prescription-bundle.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 168, column 9423: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
-ERROR: Bundle-example-prescription-bundle.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 168, column 10184: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
-ERROR: Bundle-example-prescription-bundle.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 168, column 10968: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
-ERROR: Communication-example-communication.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 929: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
-ERROR: DocumentReference-example-document-reference.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 1025: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
-ERROR: Encounter-encounter-001.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 918: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
-ERROR: MedicationDispense-dispense-001.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 733: The link 'Encounter/example-encounter' for "Encounter/example-encounter" cannot be resolved
-ERROR: MedicationDispense-dispense-001.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 947: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
-ERROR: Provenance-provenance-001.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 426: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
-ERROR: Provenance-provenance-001.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 168, column 1210: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
-ERROR: Task-example-claim-task.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 653: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
-ERROR: Task-example-claim-task.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 853: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
-ERROR: Task-example-claim-task.html#/html/body/div/div/div/div/div/div/p/a at Line 168, column 939: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
-ERROR: search-operation.html#/html/body/div/div/div/div/div/p/a at Line 145, column 149: The link 'StructureDefinition-ng-bundle-hmo-to-hospital.html' for "NGPrescriptionBundle" cannot be resolved
-ERROR: search-operation.html#/html/body/div/div/div/div/div/h4/a at Line 250, column 102: The link 'StructureDefinition-ng-bundle-hmo-to-hospital.html' for "NGPrescriptionBundle" cannot be resolved
-ERROR: search-operation.html#/html/body/div/div/div/div/div/p/a at Line 299, column 169: The link 'StructureDefinition-ng-bundle-hmo-to-hospital.html' for "NGClaimsBundle" cannot be resolved
-ERROR: search-operation.html#/html/body/div/div/div/div/div/h4/a at Line 397, column 88: The link 'StructureDefinition-ng-bundle-hmo-to-hospital.html' for "NGClaimsBundle" cannot be resolved
+ERROR: AuditEvent-audit-001.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 1280: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: AuditEvent-audit-001.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 1521: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
+ERROR: Bundle-example-dispense-notification.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 167, column 1527: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
+ERROR: Bundle-example-dispense-notification.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 167, column 9318: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
+ERROR: Bundle-example-dispense-notification.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 167, column 10102: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: Bundle-example-dispense-notification.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 167, column 11422: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: Bundle-example-dispense-notification.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 167, column 11643: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
+ERROR: Bundle-example-prescription-bundle.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 167, column 9423: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: Bundle-example-prescription-bundle.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 167, column 10184: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
+ERROR: Bundle-example-prescription-bundle.html#/html/body/div/div/div/div/div/div/blockquote/table/tr/td/a at Line 167, column 10968: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: Communication-example-communication.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 929: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
+ERROR: DocumentReference-example-document-reference.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 1025: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: Encounter-encounter-001.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 918: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: MedicationDispense-dispense-001.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 733: The link 'Encounter/example-encounter' for "Encounter/example-encounter" cannot be resolved
+ERROR: MedicationDispense-dispense-001.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 947: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
+ERROR: Provenance-provenance-001.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 426: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
+ERROR: Provenance-provenance-001.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 1210: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: Task-example-claim-task.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 653: The link 'MedicationRequest/example-medication-request' for "MedicationRequest/example-medication-request" cannot be resolved
+ERROR: Task-example-claim-task.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 853: The link 'Organization/org-hospital' for "Organization/org-hospital" cannot be resolved
+ERROR: Task-example-claim-task.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 939: The link 'Practitioner/pharmacist-001' for "Practitioner/pharmacist-001" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -397,10 +393,10 @@ ERROR: Provenance.text.div: Hyperlink 'MedicationRequest/example-medication-requ
 ERROR: Provenance.text.div: Hyperlink 'Organization/org-hospital' at 'div/table/tr/td/a' for 'Organization/org-hospital' does not resolve
 == fsh-generated/resources/StructureDefinition-NgPatient.json ==
 ERROR: NG Patient.Patient.gender: Binding https://dhin.org/2025Connectathon/ValueSet/nigeria-gender is not a subset of binding http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1 because The codes 'female,male' are not in the base valueset
-INFORMATION: StructureDefinition/NgPatient: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+INFORMATION: StructureDefinition/NgPatient: StructureDefinition.snapshot.element[12].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc is deprecated with the note Use additionalBinding extension or element instead
 == fsh-generated/resources/StructureDefinition-NgPractitioner.json ==
 == fsh-generated/resources/StructureDefinition-ng-audit-event.json ==
-WARNING: StructureDefinition/ng-audit-event: StructureDefinition.snapshot.element[51].binding.valueSet: There are multiple different potential matches for the url 'http://hl7.org/fhir/ValueSet/object-lifecycle-events'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/ValueSet/object-lifecycle-events' to 'http://hl7.org/fhir/ValueSet/object-lifecycle-events|5.2.0'
+WARNING: StructureDefinition/ng-audit-event: StructureDefinition.snapshot.element[51].binding.valueSet: There are multiple different potential matches for the url 'http://hl7.org/fhir/ValueSet/object-lifecycle-events'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0-ballot-tc', found versions: 4.0.1, 5.3.0-ballot-tc. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/ValueSet/object-lifecycle-events' to 'http://hl7.org/fhir/ValueSet/object-lifecycle-events|5.3.0-ballot-tc'
 == fsh-generated/resources/StructureDefinition-ng-claim-coverage.json ==
 == fsh-generated/resources/StructureDefinition-ng-claim-task.json ==
 == fsh-generated/resources/StructureDefinition-ng-communication.json ==
